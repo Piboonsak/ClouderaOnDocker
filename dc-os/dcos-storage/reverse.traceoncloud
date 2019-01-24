@@ -1,0 +1,30 @@
+$TTL 86400
+@   IN  SOA     dc-os.traceoncloud.com. root.traceoncloud.com. (
+        2018121001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@	IN  NS          dc-os.traceoncloud.com.
+@	IN  PTR         traceoncloud.com.
+
+dc-os             IN  A   177.10.10.250
+hd-c1nn           IN  A   177.10.10.10
+hd-c2nn           IN  A   177.10.10.11
+hd-c1dn1          IN  A   177.10.10.12
+hd-c1dn2          IN  A   177.10.10.13
+hd-c1dn3          IN  A   177.10.10.14
+hd-c1dn4          IN  A   177.10.10.15
+hd-c1dn5          IN  A   177.10.10.16
+db-cdh            IN  A   177.10.10.206
+
+250.10       IN  PTR        dc-os.traceoncloud.com.
+10.10        IN  PTR        hd-c1nn.traceoncloud.com.
+11.10        IN  PTR        hd-c2nn.traceoncloud.com.
+12.10        IN  PTR        hd-c1dn1.traceoncloud.com.
+13.10        IN  PTR        hd-c1dn2.traceoncloud.com.
+14.10        IN  PTR        hd-c1dn3.traceoncloud.com.
+15.10        IN  PTR        hd-c1dn4.traceoncloud.com.
+16.10        IN  PTR        hd-c1dn5.traceoncloud.com.
+206.10       IN  PTR        db-cdh.traceoncloud.com.

@@ -1,0 +1,69 @@
+$TTL 86400
+@   IN  SOA     dc-os.traceoncloud.com. root.traceoncloud.com. (
+        2018113001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@	IN  NS          dc-os.traceoncloud.com.
+@	IN  PTR         traceoncloud.com.
+
+dc-os             IN  A   177.10.10.250
+docker01          IN  A   192.168.4.6
+docker02          IN  A   192.168.4.13
+docker03          IN  A   192.168.4.9
+docker04          IN  A   192.168.4.19
+docker05          IN  A   192.168.4.16
+hd-c1nn		  IN  A	  177.10.10.10
+hd-c2nn		  IN  A	  177.10.10.11
+hd-c1dn1	  IN  A   177.10.10.12
+hd-c1dn2	  IN  A   177.10.10.13
+hd-c1dn3	  IN  A	  177.10.10.14
+hd-c1dn4	  IN  A	  177.10.10.15
+hd-c1dn5	  IN  A	  177.10.10.16
+db-cdh            IN  A   177.10.10.205
+
+mysql-management  IN  A   192.168.2.61
+mysql-node1	  IN  A   192.168.2.62
+mysql-node2	  IN  A   192.168.2.63
+Redis-N1          IN  A   192.168.2.60
+WF-DC             IN  A   192.168.3.11
+WF-DN1            IN  A   192.168.3.12
+WF-DN2            IN  A   192.168.3.17
+js-n1		  IN  A   192.168.3.16
+ngx-n1            IN  A   192.168.1.20
+ngx-n2            IN  A   192.168.1.18
+tst-n1            IN  A   192.168.5.11
+
+
+250.10       IN  PTR        dc-os.traceoncloud.com.
+10.10        IN  PTR        hd-c1nn.traceoncloud.com.
+11.10        IN  PTR        hd-c2nn.traceoncloud.com.
+12.10        IN  PTR        hd-c1dn1.traceoncloud.com.
+13.10        IN  PTR        hd-c1dn2.traceoncloud.com.
+14.10        IN  PTR        hd-c1dn3.traceoncloud.com.
+15.10        IN  PTR        hd-c1dn4.traceoncloud.com.
+16.10        IN  PTR        hd-c1dn5.traceoncloud.com.
+205.10       IN  PTR        db-cdh.traceoncloud.com.
+
+6.4       IN  PTR         docker01.traceoncloud.com.
+13.4      IN  PTR         docker02.traceoncloud.com.
+9.4       IN  PTR         docker03.traceoncloud.com.
+19.4      IN  PTR         docker04.traceoncloud.com.
+16.4      IN  PTR         docker05.traceoncloud.com.
+61.2      IN  PTR         mysql-management.traceoncloud.com.
+62.2      IN  PTR         mysql-node1.traceoncloud.com.
+63.2      IN  PTR         mysql-node2.traceoncloud.com.
+60.2      IN  PTR         Redis-N1.traceoncloud.com.
+11.3      IN  PTR         WF-DC.traceoncloud.com.
+12.3      IN  PTR         WF-DN1.traceoncloud.com.
+17.3      IN  PTR         WF-DN2.traceoncloud.com.
+16.3      IN  PTR	  js-n1.traceoncloud.com.
+20.1      IN  PTR         ngx-n1.traceoncloud.com.
+18.1      IN  PTR         ngx-n2.traceoncloud.com.
+11.5      IN  PTR         tst-n1.traceoncloud.com.
+
+
+
+

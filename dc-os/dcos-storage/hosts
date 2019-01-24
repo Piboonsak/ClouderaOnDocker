@@ -1,0 +1,12 @@
+#Traceon
+177.10.10.250	dc-os.traceoncloud.com dc-os
+
+#Cloudera
+177.10.10.10    hd-c1nn.traceoncloud.com hd-c1nn
+177.10.10.11    hd-c2nn.traceoncloud.com hd-c2nn
+177.10.10.12    hd-c1dn1.traceoncloud.com hd-c1dn1
+177.10.10.13    hd-c1dn2.traceoncloud.com hd-c1dn2
+177.10.10.14    hd-c1dn3.traceoncloud.com hd-c1dn3
+177.10.10.15    hd-c1dn4.traceoncloud.com hd-c1dn4
+177.10.10.16    hd-c1dn5.traceoncloud.com hd-c1dn5
+177.10.10.205   db-cdh.traceoncloud.com db-cdh

@@ -1,0 +1,55 @@
+$TTL 86400
+@	IN	SOA     dc-os.traceoncloud.com. root.traceoncloud.com. (
+                        2018121001
+                        3600
+                        1800
+                        604800
+                        86400 )
+@	IN  NS          dc-os.traceoncloud.com.
+
+dc-os.traceoncloud.com.             IN  A   177.10.10.250
+dc-os.traceoncloud.com.             IN  A   177.20.0.250
+docker01.traceoncloud.com.          IN  A   192.168.4.6
+docker02.traceoncloud.com.          IN  A   192.168.4.13
+docker03.traceoncloud.com.          IN  A   192.168.4.9
+docker04.traceoncloud.com.          IN  A   192.168.4.19
+docker05.traceoncloud.com.          IN  A   192.168.4.16
+
+hd-c1dnn.traceoncloud.com.          IN  A   177.10.10.10
+hd-c2dnn.traceoncloud.com.          IN  A   177.10.10.11
+hd-c1dn1.traceoncloud.com.          IN  A   177.10.10.12
+hd-c1dn2.traceoncloud.com.          IN  A   177.10.10.13
+hd-c1dn3.traceoncloud.com.          IN  A   177.10.10.14
+hd-c1dn4.traceoncloud.com.          IN  A   177.10.10.15
+hd-c1dn5.traceoncloud.com.          IN  A   177.10.10.16
+db-cdh.traceoncloud.com             IN  A   177.10.10.206
+
+hd-c1dnn.traceoncloud.com.          IN  A   177.20.0.10
+hd-c2dnn.traceoncloud.com.          IN  A   177.20.0.11
+hd-c1dn1.traceoncloud.com.          IN  A   177.20.0.12
+hd-c1dn2.traceoncloud.com.          IN  A   177.20.0.13
+hd-c1dn3.traceoncloud.com.          IN  A   177.20.0.14
+hd-c1dn4.traceoncloud.com.          IN  A   177.20.0.15
+hd-c1dn5.traceoncloud.com.          IN  A   177.20.0.16
+db-cdh.traceoncloud.com             IN  A   177.20.0.206
+
+pdi-n1.traceoncloud.com.            IN  A   192.168.4.10
+mysql-management.traceoncloud.com.  IN  A   192.168.2.61
+mysql-node1.traceoncloud.com.       IN  A   192.168.2.62
+mysql-node2.traceoncloud.com.       IN  A   192.168.2.63
+Redis-N1.traceoncloud.com.          IN  A   192.168.2.60
+WF-DC.traceoncloud.com.             IN  A   192.168.3.11
+WF-DN1.traceoncloud.com.            IN  A   192.168.3.12
+WF-DN2.traceoncloud.com.            IN  A   192.168.3.17
+js-n1.traceonclound.com.            IN  A   192.168.3.16
+ngx-n1.traceoncloud.com.            IN  A   192.168.1.20
+ngx-n2.traceoncloud.com.            IN  A   192.168.1.18
+tst-n1.traceoncloud.com.            IN  A   192.168.5.11
+
+traceoncloud.com                    IN  A   177.10.10.205
+@                                   IN  A   177.10.10.205
+
+traceoncloud.com                    IN  A   177.20.0.205
+@                                   IN  A   177.20.0.205
+
+traceoncloud.com.	IN	MX	75 mail.traceoncloud.com.
