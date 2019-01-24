@@ -1,0 +1,39 @@
+FROM ubuntu:16.04
+MAINTAINER Piboonsak Pimsarn (PiboonsakTraceon@gmail.com)
+LABEL Description="ubuntu 16.04 STD ver 5.0"
+
+EXPOSE 22 25 53 80 88-220 \
+3000-3400 4000-4800 5000-6100 7000-7500 \
+8000-8100 8800-9200 9800-10200 14000-16200 \
+18000-20000 21000-26000 41414 50000-51000 60010
+
+RUN apt-get update && apt-get install -y \
+        nano \
+        sudo \
+        vim \
+        wget \
+        curl \
+        htop \
+        man \
+        host \
+        language-pack-en \
+        net-tools \
+        iptables iptables-persistent \
+        software-properties-common \
+        apt-transport-https
+RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
+RUN apt-get install -y iputils-ping
+RUN apt-get install dnsutils -y
+RUN apt-get install -y openssh-server
+RUN apt-get update
+RUN rm -rf /var/lib/apt/lists/*
+RUN echo "root:123456" | chpasswd
+RUN service ssh restart
+RUN mkdir -p /root/.ssh
+ADD hosts /etc/
+ADD resolv.conf /etc/
+ADD ssh_config /etc/ssh/
+ADD sshd_config /etc/ssh/
+ADD cloudera-manager-installer.bin /root/
+ADD createAuthorizedKey.sh /root/
+CMD /bin/sh -c service ssh start

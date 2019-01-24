@@ -1,0 +1,25 @@
+FROM ubuntu:16.04
+MAINTAINER Piboonsak Pimsarn (PiboonsakTraceon@gmail.com) 
+LABEL Description="ubuntu 16.04 STD ver 1.0"
+ENV ubuntu=16.04
+RUN apt-get update && apt-get install -y \
+	nano \
+	sudo \
+	vim \
+	wget \
+	curl \
+	htop \
+	man \
+	net-tools \
+        iptables iptables-persistent
+RUN apt-get install -y iputils-ping
+RUN apt-get install -y openssh-server
+RUN rm -rf /var/lib/apt/lists/*
+RUN echo "root:123456" | chpasswd
+RUN service ssh restart
+RUN mkdir -p /root/.ssh
+EXPOSE 22/tcp 25/tcp 53/tcp 80/tcp 88/tcp 389/tcp 443/tcp 636/tcp 749/tcp \
+1004/tcp 1006/tcp 2181/tcp 2377/tcp 3306/tcp 4732/tcp 6066/tcp 7077/tcp 7180/tcp \
+8020/tcp 8070/tcp 8080/tcp 8485/tcp 8088/tcp 8888/tcp 8998/tcp 9083/tcp \
+10000/tcp 11000/tcp 14000/tcp 18080/tcp 21050/tcp \
+50020/tcp 50070/tcp 50470/tcp 50770/tcp 60010/tcp
