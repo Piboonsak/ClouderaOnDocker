@@ -1,0 +1,45 @@
+#!/bin/sh
+#deploy keytab
+scp hdfs.keytab yarn.keytab mapred.keytab hd-c1nn:/etc/hadoop/conf
+scp hdfs.keytab yarn.keytab mapred.keytab hd-c2nn:/etc/hadoop/conf
+scp hdfs.keytab yarn.keytab mapred.keytab hd-c1dn1:/etc/hadoop/conf
+scp hdfs.keytab yarn.keytab mapred.keytab hd-c1dn2:/etc/hadoop/conf
+scp hdfs.keytab yarn.keytab mapred.keytab hd-c2dn1:/etc/hadoop/conf
+scp hdfs.keytab yarn.keytab mapred.keytab hd-c2dn2:/etc/hadoop/conf
+scp hdfs.keytab yarn.keytab mapred.keytab pdi-n1:/etc/hadoop/conf
+
+# Set file permission
+ssh hd-c1nn sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh hd-c1nn sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh hd-c1nn sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh hd-c1nn sudo chmod 400 /etc/hadoop/conf/*.keytab
+
+ssh hd-c2nn sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh hd-c2nn sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh hd-c2nn sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh hd-c2nn sudo chmod 400 /etc/hadoop/conf/*.keytab
+
+ssh hd-c1dn1 sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh hd-c1dn1 sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh hd-c1dn1 sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh hd-c1dn1 sudo chmod 400 /etc/hadoop/conf/*.keytab
+
+ssh hd-c1dn2 sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh hd-c1dn2 sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh hd-c1dn2 sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh hd-c1dn2 sudo chmod 400 /etc/hadoop/conf/*.keytab
+
+ssh hd-c2dn1 sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh hd-c2dn1 sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh hd-c2dn1 sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh hd-c2dn1 sudo chmod 400 /etc/hadoop/conf/*.keytab
+
+ssh hd-c2dn2 sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh hd-c2dn2 sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh hd-c2dn2 sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh hd-c2dn2 sudo chmod 400 /etc/hadoop/conf/*.keytab
+
+ssh pdi-n1 sudo chown hdfs:hadoop /etc/hadoop/conf/hdfs.keytab 
+ssh pdi-n1 sudo chown mapred:hadoop /etc/hadoop/conf/mapred.keytab 
+ssh pdi-n1 sudo chown yarn:hadoop /etc/hadoop/conf/yarn.keytab 
+ssh pdi-n1 sudo chmod 400 /etc/hadoop/conf/*.keytab

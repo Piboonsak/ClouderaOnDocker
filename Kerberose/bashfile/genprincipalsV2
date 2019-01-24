@@ -1,0 +1,60 @@
+#!/bin/sh
+#generate principals
+
+kadmin.local addprinc -randkey root/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey root/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey root/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey root/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey root/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey root/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey root/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local addprinc -randkey oozie/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey oozie/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey oozie/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey oozie/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey oozie/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey oozie/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey oozie/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local addprinc -randkey httpfs/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey httpfs/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey httpfs/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey httpfs/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey httpfs/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey httpfs/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey httpfs/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local addprinc -randkey zookeeper/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey zookeeper/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey zookeeper/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey zookeeper/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey zookeeper/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey zookeeper/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey zookeeper/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local addprinc -randkey spark/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey spark/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey spark/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey spark/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey spark/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey spark/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey spark/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local addprinc -requires_preauth -randkey impala/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -requires_preauth -randkey impala/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -requires_preauth -randkey impala/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -requires_preauth -randkey impala/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -requires_preauth -randkey impala/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -requires_preauth -randkey impala/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -requires_preauth -randkey impala/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local addprinc -randkey hbase/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey hbase/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey hbase/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey hbase/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey hbase/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey hbase/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local addprinc -randkey hbase/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local listprincs

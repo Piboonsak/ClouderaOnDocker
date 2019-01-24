@@ -1,0 +1,5 @@
+#!/bin/sh
+# restart krb5kdc and kadmin
+
+service krb5kdc restart 
+service kadmin restart

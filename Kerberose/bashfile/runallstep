@@ -1,0 +1,7 @@
+#!/bin/sh
+./delkeytabCDH
+
+#generate principals
+./genprincipals
+./genkeytab
+./deploykeytabCDH

@@ -1,0 +1,37 @@
+#!/bin/sh
+#delete principals
+
+kadmin.local delprinc hdfs/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/hd-c1nn.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local delprinc hdfs/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/hd-c2nn.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local delprinc hdfs/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/hd-c1dn1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local delprinc hdfs/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/hd-c1dn2.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local delprinc hdfs/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/hd-c2dn1.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local delprinc hdfs/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/hd-c2dn2.traceoncloud.com@TRACEONCLOUD.COM
+
+kadmin.local delprinc hdfs/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc mapred/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc yarn/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
+kadmin.local delprinc HTTP/pdi-n1.traceoncloud.com@TRACEONCLOUD.COM
