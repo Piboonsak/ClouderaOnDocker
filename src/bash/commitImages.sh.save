@@ -1,0 +1,5 @@
+#/bin/bash
+DATE=`date +%Y-%m-%d
+VERSION=${date}
+echo "${VERSION}"
+#docker commit hd-c1nn clousera:hd-c1nn

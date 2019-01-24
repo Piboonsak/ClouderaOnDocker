@@ -1,0 +1,14 @@
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+177.10.10.10    hd-c1nn.traceoncloud.com    hd-c1nn
+177.10.10.11    hd-c2nn.traceoncloud.com    hd-c2nn
+177.10.10.12    hd-c1dn1.traceoncloud.com   hd-c1dn1
+177.10.10.13    hd-c1dn2.traceoncloud.com   hd-c1dn2
+177.10.10.14    hd-c1dn3.traceoncloud.com   hd-c1dn3
+177.10.10.15    hd-c1dn4.traceoncloud.com   hd-c1dn4
+177.10.10.16    hd-c1dn5.traceoncloud.com   hd-c1dn5

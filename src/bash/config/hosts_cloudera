@@ -1,0 +1,31 @@
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+#Traceon
+177.10.10.250   dc-os.traceoncloud.com dc-os
+177.20.0.250    dc-os.traceoncloud.com dc-os
+
+# NetCDH
+177.10.10.10    hd-c1nn.traceoncloud.com hd-c1nn
+177.10.10.11    hd-c2nn.traceoncloud.com hd-c2nn
+177.10.10.12    hd-c1dn1.traceoncloud.com hd-c1dn1
+177.10.10.13    hd-c1dn2.traceoncloud.com hd-c1dn2
+177.10.10.14    hd-c1dn3.traceoncloud.com hd-c1dn3
+177.10.10.15    hd-c1dn4.traceoncloud.com hd-c1dn4
+177.10.10.16    hd-c1dn5.traceoncloud.com hd-c1dn5
+177.10.10.206   db-cdh.traceoncloud.com db-cdh
+
+# NetCDH_bridge
+177.20.0.10    hd-c1nn.traceoncloud.com hd-c1nn
+177.20.0.11    hd-c2nn.traceoncloud.com hd-c2nn
+177.20.0.12    hd-c1dn1.traceoncloud.com hd-c1dn1
+177.20.0.13    hd-c1dn2.traceoncloud.com hd-c1dn2
+177.20.0.14    hd-c1dn3.traceoncloud.com hd-c1dn3
+177.20.0.15    hd-c1dn4.traceoncloud.com hd-c1dn4
+177.20.0.16    hd-c1dn5.traceoncloud.com hd-c1dn5
+177.20.0.206   db-cdh.traceoncloud.com db-cdh
+
